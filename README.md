@@ -87,7 +87,7 @@ curl -X POST http://localhost:8080/vehicles \
 
 **Test:**
 ```bash
-curl -X POST http://localhost:8080/vehicles/1/assign/1
+curl -X POST http://localhost:8080/vehicles/1/customer/1
 ```
 
 ---
