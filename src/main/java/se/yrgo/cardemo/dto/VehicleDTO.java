@@ -7,6 +7,16 @@ public class VehicleDTO {
     private String model;
     private int productionYear;
 
+    public VehicleDTO() {}
+
+    public VehicleDTO(Long id, String registrationNumber, String brand, String model, int productionYear) {
+        this.id = id;
+        this.registrationNumber = registrationNumber;
+        this.brand = brand;
+        this.model = model;
+        this.productionYear = productionYear;
+    }
+
     public Long getId() {
         return id;
     }

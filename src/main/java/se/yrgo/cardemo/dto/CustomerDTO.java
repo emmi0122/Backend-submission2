@@ -9,7 +9,12 @@ public class CustomerDTO {
     private String phoneNumber;
     private List<VehicleDTO> vehicles = new ArrayList<>();
 
-    public CustomerDTO() {
+    public CustomerDTO() {}
+
+    public CustomerDTO(Long id, String name, String phoneNumber) {
+        this.id = id;
+        this.name = name;
+        this.phoneNumber = phoneNumber;
     }
 
     public Long getId() {

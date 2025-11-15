@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface VehicleRepository extends JpaRepository<Vehicle, Long> {
     //Get all vehicles for a specific customer (through the customers ID)
-    @Query("SELECT v FROM Vehicle WHERE v.customer.id = :customerId")
+    @Query("SELECT v FROM Vehicle v WHERE v.customer.id = :customerId")
     List<Vehicle> findVehicleByCustomerId(@Param("customerId") Long customerId);
 
     //Get all vehicles with their brand
